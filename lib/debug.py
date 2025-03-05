@@ -10,10 +10,10 @@ engine = create_engine('sqlite:///freebies.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# Ensure tables are created
+
 Base.metadata.create_all(engine)
 
-# Load data
+
 dev1 = session.query(Dev).filter_by(name="Alice").first()
 dev2 = session.query(Dev).filter_by(name="Bob").first()
 google = session.query(Company).filter_by(name="Google").first()

@@ -58,3 +58,17 @@ class Freebie(Base):
 
     def __repr__(self):
         return f'<Freebie {self.item_name}, Worth {self.value}>'
+
+
+#1. Get a Developer and Their Freebies, companies
+    #dev = session.query(Dev).filter_by(name="Alice Johnson").first()
+    #dev.freebies
+    #dev.companies
+#2. Get a Company and Their Freebies,devs
+   # company = session.query(Company).filter_by(name="Google").first()
+   # company.freebies
+    #company.devs
+#3. Get a Freebie and Its Dev & Company
+    #freebie = session.query(Freebie).filter_by(item_name="T-shirt").first()
+    #freebie.dev  
+    #freebie.company
